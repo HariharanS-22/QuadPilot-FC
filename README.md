@@ -1,4 +1,5 @@
-# 🚁 QuadPilot-FC – STM32F411-Based Quadcopter Flight Controller
+# 🚁 QuadPilot-FC – STM32F411-Based Flight Controller
+
 
 QuadPilot-FC is a compact, custom-built quadcopter flight controller based on the **STM32F411 Blackpill** board. It uses the **INAV configurator** for real-time tuning and configuration, and integrates sensors like **MPU6050**, **ADXL345**, **BM280**, and **HMC5883** for precise flight stabilization and environmental awareness. The hardware is built using a **zero PCB layout**, making it highly space-efficient and ideal for lightweight UAVs.
 
@@ -10,7 +11,7 @@ QuadPilot-FC is a compact, custom-built quadcopter flight controller based on th
 - ✅ INAV-compatible firmware and configuration
 - ✅ Sensor suite: MPU6050 (gyro/accel), ADXL345 (accel), BM280 (barometer), HMC5883 (magnetometer)
 - ✅ PID-based control loop for smooth and stable flight
-- ✅ Zero PCB design with direct sensor and ESC connections
+- ✅ Zero PCB design 
 - ✅ Minimalistic and lightweight hardware footprint
 
 ---
@@ -24,11 +25,11 @@ QuadPilot-FC is a compact, custom-built quadcopter flight controller based on th
 | Accelerometer    | ADXL345 (High-precision 3-axis accel)    |
 | Barometer        | BM280 (Altitude & pressure sensing)      |
 | Magnetometer     | HMC5883 (Compass/heading detection)      |
-| ESCs             | BLHeli-S / Compatible 30A ESCs           |
-| Motors           | 2205 2300KV Brushless Motors             |
+| ESCs             | Compatible 30A ESCs                      |
+| Motors           | 1000kV Brushless Motors                 |
 | Battery          | 3S/4S LiPo                               |
-| Frame            | 250mm Carbon Fiber (Custom/DIY)          |
-| Receiver         | FlySky / FrSky (PPM/SBUS Input)          |
+| Frame            | F450 Quadcopter Frame                    |
+| Receiver         | FlySky i6 (PPM)                          |
 
 ---
 
