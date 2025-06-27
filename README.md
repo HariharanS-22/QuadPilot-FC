@@ -1,68 +1,82 @@
-# 🚁 QuadPilot-FC – STM32F411-Based Flight Controller
+# 🚁 QuadPilot-FC – STM32F411-Based Quadcopter Flight Controller
 
 <p align="center">
-  <img src="https://drive.google.com/uc?export=view&id=1qYn6Pgk2dRrZZ9FfdGF-8EtIsHSCfpHK" alt="Drone Icon" width="500"/>
+  <img src="https://drive.google.com/uc?export=view&id=1qYn6Pgk2dRrZZ9FfdGF-8EtIsHSCfpHK" alt="QuadPilot FC" width="600"/>
 </p>
 
-**QuadPilot-FC** is a compact, custom-built quadcopter flight controller powered by the **STM32F411 Blackpill** board. It uses the **INAV configurator** for real-time flight tuning and control, with an integrated sensor suite for accurate stabilization and environmental awareness. Designed using a **zero PCB layout**, it offers a space-saving, minimalistic form factor—perfect for lightweight UAVs.
+**QuadPilot-FC** is a custom-built, INAV-compatible flight controller designed for quadcopters using the powerful **STM32F411 Blackpill** board. Engineered with a **zero PCB layout**, it features a modular sensor suite and streamlined integration—ideal for compact, agile aerial platforms.
 
 
+## 📸 Overview
 
-## 🛠️ Features
-
-- ✅ STM32F411 Blackpill-based flight controller  
-- ✅ INAV-compatible firmware & configuration  
-- ✅ Sensor suite:
-  - MPU6050 (Gyroscope + Accelerometer)  
-  - ADXL345 (Precision Accelerometer)  
-  - BM280 (Barometer)  
-  - HMC5883 (Magnetometer)
-- ✅ PID-based control loop  
-- ✅ Space-efficient Zero PCB design  
-- ✅ Lightweight hardware footprint  
+- **Flight Stack**: INAV firmware for GPS-aware stabilization  
+- **Controller**: STM32F411 (Blackpill) with F4 core  
+- **Sensor Suite**: MPU6050, ADXL345, BM280, HMC5883  
+- **Control Loop**: PID-based real-time flight control  
+- **Connectivity**: FlySky i6 RC (PPM input)  
+- **Design**: Hand-wired zero-PCB layout with space efficiency  
 
 
+## 👥 Team & Contributors
 
-## 🧩 Hardware
+Meet the minds behind **QuadPilot-FC** – open-source drone enthusiasts crafting embedded UAV solutions:
+
+- 🛠️ [**Akash Rajan**](https://github.com/Akashrajan10) 
+- 🌐 [**Hariharan**](https://github.com/HariharanS-22)  
+
+## 🔧 Hardware
 
 <p align="center">
-  <img src="https://drive.google.com/uc?export=view&id=1lZXwAWgJRk456jW6qQoy4LYiFgoMexCX" alt="Structure" width="500"/>
+  <img src="https://drive.google.com/uc?export=view&id=1lZXwAWgJRk456jW6qQoy4LYiFgoMexCX" alt="QuadPilot Hardware Layout" width="535"/>
 </p>
 
-<table align="center">
-  <thead>
-    <tr>
-      <th>Component</th>
-      <th>Specification</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr><td>MCU</td><td>STM32F411CEU6 (Blackpill)</td></tr>
-    <tr><td>IMU</td><td>MPU6050 (Gyro + Accelerometer)</td></tr>
-    <tr><td>Accelerometer</td><td>ADXL345 (3-axis, high precision)</td></tr>
-    <tr><td>Barometer</td><td>BM280 (Altitude & pressure)</td></tr>
-    <tr><td>Magnetometer</td><td>HMC5883 (Compass)</td></tr>
-    <tr><td>ESCs</td><td>30A ESCs (INAV compatible)</td></tr>
-    <tr><td>Motors</td><td>1000kV Brushless Motors</td></tr>
-    <tr><td>Battery</td><td>3S/4S LiPo</td></tr>
-    <tr><td>Frame</td><td>F450 Quadcopter Frame</td></tr>
-    <tr><td>Receiver</td><td>FlySky i6 (PPM Signal)</td></tr>
-  </tbody>
+<div align="center">
+
+<table>
+  <tr>
+    <th>Component</th>
+    <th>Purpose</th>
+  </tr>
+  <tr><td>STM32F411 Blackpill</td><td>Main flight controller (F4 core)</td></tr>
+  <tr><td>MPU6050</td><td>Gyroscope + Accelerometer</td></tr>
+  <tr><td>ADXL345</td><td>High-precision 3-axis accelerometer</td></tr>
+  <tr><td>BM280</td><td>Barometric pressure & altitude</td></tr>
+  <tr><td>HMC5883</td><td>3-axis magnetometer (compass)</td></tr>
+  <tr><td>30A ESCs</td><td>Motor speed control</td></tr>
+  <tr><td>1000kV BLDC Motors</td><td>Quadcopter propulsion</td></tr>
+  <tr><td>3S/4S LiPo Battery</td><td>Primary power source</td></tr>
+  <tr><td>F450 Frame</td><td>Lightweight quadcopter frame</td></tr>
+  <tr><td>FlySky i6</td><td>PPM RC signal input</td></tr>
 </table>
 
+</div>
 
-## 🧾 Zero PCB Layout
 
+## 🧠 Features
+
+- **INAV-Compatible Flight Control**  
+  Supports all core INAV features like GPS, barometer-based altitude hold, horizon leveling, and more.
+
+- **Zero PCB Integration**  
+  Entire flight controller assembled without a custom PCB—space optimized and hand-wired.
+
+- **Full Sensor Suite**  
+  Multi-sensor fusion improves stability and orientation accuracy during aggressive flight.
+
+- **PPM Receiver Input**  
+  Clean signal input using FlySky i6 in PPM mode for minimal wiring and robust control.
+
+
+## 🧪 Circuit & Layout
+
+### 🔌 Wiring Layout
 <p align="center">
   <img src="images/flight_controller_layout.png" width="600"/>
   <br>
-  <i>Custom Zero PCB layout integrating STM32F411 and all sensors</i>
+  <i>Zero PCB layout with STM32F411 and sensor suite</i>
 </p>
 
-
-
-## ⚡ Circuitary
-
+### 🔧 Circuit Diagram
 <p align="center">
   <img src="https://drive.google.com/uc?export=view&id=1adNxw3GfxY16109bKmsbfa1pXdPlGDL7" alt="Circuit Diagram" width="400"/>
 </p>
@@ -82,4 +96,4 @@
 
 ## ⚖️ License
 
-This project is licensed under the MIT License. See the [`LICENSE`](./LICENSE) file for details.
+This project is open-source under the MIT License. See [`LICENSE`](./LICENSE) for full terms.
