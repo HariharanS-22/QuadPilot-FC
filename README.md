@@ -1,4 +1,4 @@
-# 🚁 QuadPilot-FC – STM32F411-Based Quadcopter Flight Controller
+# 🚁 QuadPilot-FC – STM32F411-Based Flight Controller
 
 <p align="center">
   <img src="https://drive.google.com/uc?export=view&id=1qYn6Pgk2dRrZZ9FfdGF-8EtIsHSCfpHK" alt="QuadPilot FC" width="600"/>
