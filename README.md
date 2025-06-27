@@ -6,7 +6,6 @@
 
 QuadPilot-FC is a compact, custom-built quadcopter flight controller based on the **STM32F411 Blackpill** board. It uses the **INAV configurator** for real-time tuning and configuration, and integrates sensors like **MPU6050**, **ADXL345**, **BM280**, and **HMC5883** for precise flight stabilization and environmental awareness. The hardware is built using a **zero PCB layout**, making it highly space-efficient and ideal for lightweight UAVs.
 
----
 
 ## 🛠️ Features
 
@@ -17,13 +16,16 @@ QuadPilot-FC is a compact, custom-built quadcopter flight controller based on th
 - ✅ Zero PCB design  
 - ✅ Minimalistic and lightweight hardware footprint  
 
----
 
 ## 🧩 Hardware 
-
 <p align="center">
+  <img src="images/flight_controller_layout.png" width="600"/>
+  <br>
+  <i>Zero PCB layout of STM32F411 and sensor suite</i>
+</p>
 
-<table>
+<p>
+<table align = "center" >
   <thead>
     <tr>
       <th>Component</th>
@@ -46,13 +48,6 @@ QuadPilot-FC is a compact, custom-built quadcopter flight controller based on th
 
 </p>
 
-<p align="center">
-  <img src="images/flight_controller_layout.png" width="600"/>
-  <br>
-  <i>Zero PCB layout of STM32F411 and sensor suite</i>
-</p>
-
----
 
 ## 📚 Documentation
 
@@ -63,7 +58,6 @@ QuadPilot-FC is a compact, custom-built quadcopter flight controller based on th
 - **[BM280 Datasheet](https://www.bosch-sensortec.com/media/boschsensortec/downloads/datasheets/bst-bme280-ds002.pdf)**  
 - **[HMC5883 Datasheet](https://cdn.sparkfun.com/datasheets/Sensors/Magneto/HMC5883L.pdf)**  
 
----
 
 ## ⚖️ License
 
