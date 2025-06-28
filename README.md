@@ -1,3 +1,11 @@
+<p align="left">
+  <img src="https://img.shields.io/github/repo-size/HariharanS-22/QuadPilot-FC?style=flat"/>
+  <img src="https://img.shields.io/github/last-commit/HariharanS-22/QuadPilot-FC?style=flat"/>
+  <img src="https://img.shields.io/github/issues/HariharanS-22/QuadPilot-FC?style=flat"/>
+  <img src="https://img.shields.io/badge/License-Custom-darkblue?style=flat"/>
+  <img src="https://img.shields.io/badge/Made%20with-STM32-blue?style=flat&logo=stmicroelectronics"/>
+</p>
+
 # 🚁 QuadPilot-FC – STM32F411-Based Flight Controller
 
 <p align="center">
