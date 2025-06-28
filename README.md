@@ -106,6 +106,6 @@ Meet the minds behind **QuadPilot-FC** – open-source drone enthusiasts craftin
 
 This project is released under a **Custom License**. See [`LICENSE`](./LICENSE) for full terms. 
 
-Public viewing is allowed, but **forking, redistribution, or reuse** is **prohibited without explicit permission**.  
+Public viewing is allowed, but **forking and reuse require prior permission**.  
 
 
